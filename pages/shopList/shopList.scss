@@ -1,0 +1,26 @@
+.container{
+  .body{
+    .nape{
+      display: flex;
+      padding: 15rpx;
+      margin: 15rpx;
+      border: 1rpx solid #efefef;
+      border-radius: 8rpx;
+      box-shadow: 1rpx 1rpx 15rpx #ddd;
+      .thumb{
+        image{
+          display: block;
+          width: 250rpx;
+          height: 250rpx;
+          margin-right: 15rpx;
+        }
+      }
+      .napeText{
+        display: flex;
+        flex-direction: column;
+        font-size: 24rpx;
+        justify-content: space-around;
+      }
+    }
+  }
+}

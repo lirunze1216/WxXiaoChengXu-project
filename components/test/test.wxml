@@ -1,0 +1,34 @@
+<!--components/test/test.wxml-->
+<view>
+  ``````````````````````````````````````````````````````
+</view>
+<view>
+ 我是behavior里面共享出来的数据： {{username}}
+</view>
+<view>
+  ``````````````````````````````````````````````````````
+</view>
+<text>{{count}}</text>
+<button bindtap="addCount">+{{number}}</button>
+<view>
+  ``````````````````````````````````````````````````````
+</view>
+<text>{{count1}}+{{count2}}={{sum}}</text>
+<button bindtap="addCount1">count1 + 1</button>
+<button bindtap="addCount2">count2 + 1</button>
+<view>
+  ``````````````````````````````````````````````````````
+</view>
+<view style="background-color: rgb({{fullColor}});" class="randomColor">
+  <text>RGB:{{fullColor}}</text>
+</view>
+<view class="btns">
+  <button size="mini" type="default" bindtap="randomColor">RGB</button>
+</view>
+<view>
+  ``````````````````````````````````````````````````````
+</view>
+<view>
+  {{count3}}
+  <button bindtap="addCount3">子传父 +1</button>
+</view>

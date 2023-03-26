@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "my-test":"/components/test/test"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#efefef",
+  "backgroundTextStyle": "dark",
+  "onReachBottomDistance": 150
+}

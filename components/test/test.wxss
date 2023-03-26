@@ -1,0 +1,7 @@
+/* components/test/test.wxss */
+.randomColor{
+  line-height: 200rpx;
+  text-align: center;
+  color: white;
+
+}

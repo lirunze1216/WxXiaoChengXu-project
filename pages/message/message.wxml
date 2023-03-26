@@ -1,0 +1,37 @@
+<!--pages/message/message.wxml-->
+<view>
+  {{m1.up(country)}}
+</view>
+<view>
+  {{m2.toLower(name)}}
+</view>
+<view>
+  ``````````````````````````````````````````````````````
+</view>
+<view class="box">
+  <input type="text" value="{{postData.username}}" bindinput="getUsername" />
+  <input type="password" value="{{postData.password}}" bindinput="getPassword" />
+  <text>{{token}}</text>
+  <button bindtap="login" size="mini">登录</button>
+  <button bindtap="outLogin" size="mini">退出登录</button>
+</view>
+
+<my-test max="11" number="3" count3="{{count}}" bind:postCount="getCount" class="my_test"></my-test>
+<view>
+  {{count}}
+</view>
+<button bindtap="addCount">父传子 +1</button>
+<view>
+  ``````````````````````````````````````````````````````
+</view>
+<button bindtap="getChild">获取子组件的实例对象</button>
+
+
+
+
+<wxs src="../../utils/tools.wxs" module="m2"></wxs>
+<wxs module="m1">
+  module.exports.up = function (str) {
+    return str.toUpperCase()
+  }
+</wxs>
